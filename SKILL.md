@@ -1,23 +1,13 @@
 ---
 name: aerobase-flights
-description: >
-  Search, score, and compare flights with jetlag impact analysis. 
-  Use when: (1) user wants to find flights between destinations, 
-  (2) user asks about jetlag or recovery time, 
-  (3) user wants to compare flight options for health/jetlag,
-  (4) user asks for travel deals with jetlag scores,
-  (5) user wants recovery plans for trips,
-  (6) user asks about airport lounges or hotels.
-  Also supports: multi-city itinerary analysis, award search, credit card points.
-credentials:
-  - name: AEROBASE_API_KEY
-    description: API key from https://aerobase.app/connect
-    required: true
-env:
-  required:
-    - AEROBASE_API_KEY
-primaryEnv: AEROBASE_API_KEY
+description: Search, score, and compare flights with jetlag impact analysis.
 homepage: https://aerobase.app
+metadata:
+  openclaw:
+    requires:
+      env:
+        - AEROBASE_API_KEY
+    primaryEnv: AEROBASE_API_KEY
 ---
 
 # Aerobase Flights Skill
